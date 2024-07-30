@@ -1,16 +1,37 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #111111;
-  background-color: #fcf1e0;
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+  color: currentColor;
 }
+
+address {
+  font-style: normal;
+}
+
+/* HEADER */
 
 .header {
 }
@@ -34,6 +55,7 @@ a {
 }
 
 .header-menu-item {
+  padding: 0;
 }
 
 .header-menu-link {
@@ -56,7 +78,10 @@ a {
 .header-socials-logo {
 }
 
+/* HERO */
+
 .hero {
+  background-color: #4c4c4c;
 }
 .hero-title {
   font-weight: 500;
@@ -83,7 +108,10 @@ a {
   color: #ffffff;
 }
 
+/* FEATURES */
+
 .features {
+  background-color: #1e1823;
 }
 .feature-list {
 }
@@ -100,6 +128,8 @@ a {
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
+
+/* INGREDIENTS */
 
 .ingredients {
 }
@@ -137,6 +167,8 @@ a {
   color: #fff;
 }
 
+/* MADE */
+
 .made {
 }
 .made-title {
@@ -166,6 +198,8 @@ a {
   letter-spacing: -0.02em;
   color: #111;
 }
+
+/* PRODUCTS */
 
 .products {
 }
@@ -204,6 +238,8 @@ a {
   color: #111;
 }
 
+/* SELLERS */
+
 .sellers {
 }
 .sellers-title {
@@ -229,6 +265,8 @@ a {
   text-transform: uppercase;
   color: #111;
 }
+
+/* REVIEWS */
 
 .reviews {
 }
@@ -265,6 +303,12 @@ a {
   font-weight: 600;
   font-size: 18px;
   color: #111;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #1e1823;
 }
 
 .footer-slogan {
