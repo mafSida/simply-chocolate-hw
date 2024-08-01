@@ -31,6 +31,10 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
 .container {
   max-width: 1106px;
   margin: auto;
@@ -217,7 +221,7 @@ address {
   color: #111;
   max-width: 486px;
   margin: 0 auto;
-  margin-bottom: 50;
+  margin-bottom: 50px;
 }
 .ingredients-list {
   display: flex;
@@ -231,6 +235,7 @@ address {
   padding: 28px 23px;
 }
 .ingredients-list-img {
+  margin-bottom: 36px;
 }
 .ingredients-list-title {
   font-weight: 600;
@@ -239,6 +244,7 @@ address {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #fff;
+  padding-left: 5px;
 }
 
 /* MADE */
@@ -254,7 +260,7 @@ address {
   text-align: center;
   color: #111;
   max-width: 205px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 .made-img {
 }
@@ -263,11 +269,18 @@ address {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  margin-bottom: 28px;
 }
 .made-list {
 }
 .made-list-item {
+  margin-bottom: 24px;
 }
+
+.made-list-item:last-child {
+  margin: 0;
+}
+
 .made-list-text {
   font-size: 14px;
   line-height: 1.28;
@@ -288,7 +301,7 @@ address {
   text-align: center;
   color: #111;
   max-width: 196px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 .products-list {
   display: flex;
@@ -330,7 +343,7 @@ address {
   text-align: center;
   color: #111;
   max-width: 160px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 .sellers-list {
   display: flex;
