@@ -106,6 +106,8 @@ img {
 }
 
 .header-socials-logo {
+  fill: transparent;
+  stroke: #111;
 }
 
 /* HERO */
