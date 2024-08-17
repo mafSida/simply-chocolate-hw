@@ -428,7 +428,12 @@ img {
   letter-spacing: -0.02em;
   color: #fff;
   top: 0;
-  background-color: #1e1823;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
   margin: 0 auto;
   padding: 0 40px;
   height: 100%;
