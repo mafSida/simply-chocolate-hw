@@ -35,6 +35,11 @@ img {
   display: block;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 .container {
   max-width: 1106px;
   margin: 0 auto;
@@ -223,7 +228,6 @@ img {
   width: calc((100% - 2 * 88px) / 3);
 }
 .feture-list-title {
-  
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 18px;
@@ -531,30 +535,11 @@ img {
 
 .modal-title {
   max-width: 298px;
-  margin-bottom: 40px;
+  margin: 0 0 40px;
+  text-align: left;
 }
 
 .modal-form {
-
-}
-
-.modal-input {
-  width: 100%;
-  height: 68px;
-  border: 1.50px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
-  padding: 22px 24px;
-  background-color: transparent;
-  margin-bottom: 18px;
-  font-size: 18px;
-  letter-spacing: -0.02em;
-  color: #404040;
-}
-
-.modal-input::placeholder {
-    font-size: 18px;
-    letter-spacing: -0.02em;
-    color: rgba(64, 64, 64, 0.3);
 }
 
 .modal-label {
@@ -565,11 +550,66 @@ img {
   color: rgba(64, 64, 64, 0.3);
 }
 
-.modal-comment{
-    border: 1.50px solid rgba(17, 17, 17, 0.05);
-    border-radius: 13px;
-    padding: 22px 24px 93px 24px;
-    height: 137px;
-    width: 100%;
+.modal-input {
+  width: 100%;
+  height: 68px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 13px;
+  padding: 22px 24px;
+  background-color: transparent;
+  margin-bottom: 18px;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #404040;
 }
 
+.modal-field-icon {
+  fill: black;
+}
+
+.modal-input::placeholder {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-comment {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 13px;
+  padding: 22px 24px 93px 24px;
+  height: 137px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.modal-input-check {
+  margin-right: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+}
+
+.modal-privacy-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.privacy-check-text {
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  display: block;
+}
+
+.modal-submit-btn {
+  display: flex;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 117px;
+  height: 45px;
+  background-color: #fd9222;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+}

@@ -8,5 +8,10 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "prettier.printWidth": 80,
+  "prettier.bracketSameLine": false,
+  "prettier.arrowParens": "avoid",
+  "prettier.filepath": "*.svg",
+  "prettier.htmlWhitespaceSensitivity": "ignore"
 }

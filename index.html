@@ -539,19 +539,44 @@
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">X</button>
-        <p class="title modal-title">LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span> </p>
+        <p class="title modal-title">
+          LEAVE A REVIEW ABOUT <span class="orange-text">OUR CHOCOLATE</span>
+        </p>
         <form class="modal-form">
           <label class="modal-label" for="name">Name</label>
-          <input class="modal-input" type="text" id="name">
+          <input class="modal-input" type="text" id="name" />
+          <svg class="modal-field-icon" width="24" height="24">
+            <use href="./images/symbol-defs.svg#user-icon"></use>
+          </svg>
           <label class="modal-label" for="email">Email</label>
-          <input class="modal-input" type="email" name="email" id="email">
+          <input class="modal-input" type="email" name="email" id="email" />
+          <svg class="modal-field-icon" width="24" height="24">
+            <use href="./images/symbol-defs.svg#mail-icon"></use>
+          </svg>
           <label class="modal-label" for="tel">Phone number</label>
-          <input class="modal-input" type="tel" name="tel" id="tel">
+          <input class="modal-input" type="tel" name="tel" id="tel" />
+          <svg class="modal-field-icon" width="24" height="24">
+            <use href="./images/symbol-defs.svg#phone-icon"></use>
+          </svg>
           <label class="modal-label" for="comment">Comment</label>
-          <textarea class="modal-comment" name="comment" id="comment" placeholder="Enter text"></textarea>
-          <input class="modal-input" type="checkbox" name="" id="">
-          <label for="">I accept the terms and conditions of the Privacy Policy</label>
-          <button type="submit">Send</button>
+          <textarea
+            class="modal-comment"
+            name="comment"
+            id="comment"
+            placeholder="Enter text"
+          ></textarea>
+          <div class="modal-privacy-check">
+            <input
+              class="modal-input-check"
+              type="checkbox"
+              name="privacy-check"
+              id="privacy-check"
+            />
+            <label class="privacy-check-text" for="privacy-check"
+              >I accept the terms and conditions of the Privacy Policy</label
+            >
+          </div>
+          <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
