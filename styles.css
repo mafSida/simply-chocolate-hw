@@ -557,35 +557,57 @@ button {
   border-radius: 13px;
   padding: 22px 24px;
   background-color: transparent;
-  margin-bottom: 18px;
   font-size: 18px;
   letter-spacing: -0.02em;
   color: #404040;
+  outline: transparent;
+  transition: border-color 300ms linear;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-field-icon {
+  stroke: #fd9222;
+}
+
+.modal-input-wrap {
+  position: relative;
+  margin-bottom: 18px;
 }
 
 .modal-field-icon {
-  fill: black;
-}
-
-.modal-input::placeholder {
-  font-size: 18px;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
+  fill: transparent;
+  stroke: #404040;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: stroke 300ms linear;
 }
 
 .modal-comment {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
+  background-color: transparent;
+  outline: transparent;
   padding: 22px 24px 93px 24px;
   height: 137px;
   width: 100%;
   margin-bottom: 18px;
+  transition: border-color 300ms linear;
+  resize: none;
 }
 
-.modal-input-check {
-  margin-right: 12px;
-  border-radius: 6px;
-  border: 1px solid rgba(17, 17, 17, 0.14);
+.modal-comment::placeholder {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-comment:focus {
+  border-color: #fd9222;
 }
 
 .modal-privacy-check {
@@ -594,12 +616,24 @@ button {
   margin-bottom: 40px;
 }
 
+.modal-input-check {
+  margin-right: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+}
+
 .privacy-check-text {
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
   font-weight: 400;
   font-size: 14px;
   display: block;
+}
+
+.modal-check-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fd9222;
 }
 
 .modal-submit-btn {
@@ -612,20 +646,4 @@ button {
   color: #ffffff;
   font-weight: 600;
   font-size: 14px;
-}
-
-.modal-input-wrap {
-  position: relative;
-}
-
-.modal-field-icon {
-  fill: transparent;
-  stroke: #404040;
-  position: absolute;
-  top: 22px;
-  left: 24px;
-}
-.modal-field-icon {
-}
-.modal-field-icon {
 }

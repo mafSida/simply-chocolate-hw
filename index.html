@@ -570,22 +570,26 @@
               </svg>
             </div>
           </div>
-          <label class="modal-label" for="comment">Comment</label>
-          <textarea
-            class="modal-comment"
-            name="comment"
-            id="comment"
-            placeholder="Enter text"
-          ></textarea>
+          <div class="modal-form-field">
+            <label class="modal-label" for="comment">Comment</label>
+            <textarea
+              class="modal-comment"
+              name="comment"
+              id="comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
           <div class="modal-privacy-check">
             <input
               class="modal-input-check"
               type="checkbox"
               name="privacy-check"
               id="privacy-check"
+              required
             />
             <label class="privacy-check-text" for="privacy-check"
-              >I accept the terms and conditions of the Privacy Policy</label
+              >I accept the terms and conditions of the
+              <a href="" class="modal-check-link">Privacy Policy</a></label
             >
           </div>
           <button class="modal-submit-btn" type="submit">Send</button>
