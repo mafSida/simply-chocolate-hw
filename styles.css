@@ -613,3 +613,19 @@ button {
   font-weight: 600;
   font-size: 14px;
 }
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-field-icon {
+  fill: transparent;
+  stroke: #404040;
+  position: absolute;
+  top: 22px;
+  left: 24px;
+}
+.modal-field-icon {
+}
+.modal-field-icon {
+}
