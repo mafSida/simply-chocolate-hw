@@ -22,8 +22,10 @@
         <nav class="header-nav">
           <a class="header-logo" href="./index.html"
             ><span class="header-logo-cursive">Simply </span> Chocolate
-            <img src="./images/chocolate-icon.svg" alt="site logo"
-          /></a>
+            <svg class="header-logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#logo-icon" alt="site logo"></use>
+            </svg>
+          </a>
           <ul class="header-menu-list">
             <li class="header-menu-item">
               <a class="header-menu-link" ref="./index.html">Home</a>
@@ -45,7 +47,7 @@
               rel="noopener noreferrer nofollow"
             >
               <svg class="header-socials-logo" width="24" height="24">
-                <use href="./images/symbol-defs.svg#instagram-icon"></use>
+                <use href="./images/icons.svg#instagram-icon"></use>
               </svg>
             </a>
           </li>
@@ -57,7 +59,7 @@
               rel="noopener noreferrer nofollow"
             >
               <svg class="header-socials-logo" width="24" height="24">
-                <use href="./images/symbol-defs.svg#facebook-icon"></use>
+                <use href="./images/icons.svg#facebook-icon"></use>
               </svg>
             </a>
           </li>
@@ -69,7 +71,7 @@
               rel="noopener noreferrer nofollow"
             >
               <svg class="header-socials-logo" width="24" height="24">
-                <use href="./images/symbol-defs.svg#twitter-icon"></use>
+                <use href="./images/icons.svg#twitter-icon"></use>
               </svg>
             </a>
           </li>
@@ -95,7 +97,7 @@
       </section>
       <section class="features">
         <div class="container">
-          <!-- <h2 class="features-title title" >Features</h2> -->
+          <h2 class="features-title title visually-hidden">Features</h2>
           <ul class="feature-list">
             <li class="feature-list-item">
               <h3 class="feture-list-title">Unsurpassed taste</h3>
@@ -581,14 +583,19 @@
           </div>
           <div class="modal-privacy-check">
             <input
-              class="modal-input-check"
+              class="modal-input-check visually-hidden"
               type="checkbox"
               name="privacy-check"
               id="privacy-check"
               required
             />
             <label class="privacy-check-text" for="privacy-check"
-              >I accept the terms and conditions of the
+              ><span>
+                <svg class="modal-check-icon" width="10" height="10">
+                  <use href="./images/icons.svg#check-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a href="" class="modal-check-link">Privacy Policy</a></label
             >
           </div>

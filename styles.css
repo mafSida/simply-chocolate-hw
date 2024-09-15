@@ -92,6 +92,11 @@ button {
   font-style: italic;
 }
 
+.header-logo-icon {
+  stroke: #fd9222;
+  fill: transparent;
+}
+
 .header-menu-list {
   display: flex;
   gap: 24px;
@@ -232,6 +237,21 @@ button {
   color: #ffffff;
   margin-bottom: 18px;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .feature-list-text {
   font-size: 14px;
   line-height: 1.28;
@@ -513,6 +533,15 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -628,6 +657,31 @@ button {
   font-weight: 400;
   font-size: 14px;
   display: block;
+  display: flex;
+  align-items: center;
+}
+
+.privacy-check-text span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  margin-right: 12px;
+  fill: transparent;
+}
+
+.modal-check-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-input-check:checked + .privacy-check-text span {
+  background-color: #fd9222;
+  border: none;
+  fill: #fafafa;
 }
 
 .modal-check-link {
