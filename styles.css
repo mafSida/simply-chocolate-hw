@@ -487,6 +487,15 @@ button {
 
 .footer {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-top {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
 }
 
 .footer-slogan {
@@ -496,6 +505,7 @@ button {
   letter-spacing: -0.02em;
   color: #fff;
   max-width: 300px;
+  margin-right: auto;
 }
 .footer-socials-text {
   font-weight: 500;
@@ -503,28 +513,53 @@ button {
   line-height: 1.28;
   text-align: center;
   color: #fff;
+  margin-bottom: 14px;
 }
 .footer-socials-list {
+  display: flex;
+  gap: 14px;
 }
 .footer-socials-item {
 }
 .footer-socials-link {
 }
+
+.footer-socials-logo {
+  fill: transparent;
+  stroke: #fff;
+}
+
+.footer-soc {
+  margin-right: 50px;
+}
+
+.footer-contacts {
+}
+
 .footer-contacts-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
-  text-align: center;
   color: #fff;
+  margin-bottom: 14px;
 }
 .footer-contacts-address {
+  display: flex;
+  flex-direction: column;
 }
+
+.footer-contacts-address a:first-child {
+  margin-bottom: 4px;
+}
+
 .footer-contacts-link {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
-  text-align: center;
   color: #fff;
+}
+
+.footer-bottom {
 }
 
 .backdrop {
