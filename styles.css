@@ -41,10 +41,10 @@ button {
 }
 
 .container {
-  max-width: 1106px;
+  max-width: 1168px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .title {
@@ -306,7 +306,7 @@ button {
   padding-left: 5px;
 }
 
-/* MADE */
+/*========================= MADE ========================*/
 
 .made {
   padding-top: 60px;
@@ -314,9 +314,23 @@ button {
 }
 .made-title {
   max-width: 205px;
+  margin-bottom: 50px;
 }
+
+.made-wrap {
+  display: flex;
+  gap: 20px;
+}
+
 .made-img {
 }
+
+.made-wrap-right {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 32px;
+}
+
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -328,6 +342,20 @@ button {
 }
 .made-list-item {
   margin-bottom: 24px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.made-list-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  position: absolute;
+  left: 0;
+  top: 5px;
 }
 
 .made-list-item:last-child {
@@ -336,7 +364,7 @@ button {
 
 .made-list-text {
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
 }
@@ -560,6 +588,57 @@ button {
 }
 
 .footer-bottom {
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-nav {
+  margin-right: auto;
+}
+
+.footer-menu-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.footer-menu-item {
+}
+
+.footer-menu-link {
+  color: #fff;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form-input {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 13px 24px;
+  width: 313px;
+  height: 52px;
+  background: transparent;
+  outline: transparent;
+  margin-right: 8px;
+}
+
+.footer-form-input::placeholder {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-subscribe-btn {
+  background: #fd9222;
+  border-radius: 100px;
+  padding: 17px 40px;
+  min-width: 137px;
+  height: 52px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .backdrop {
