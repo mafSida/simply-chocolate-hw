@@ -41,10 +41,11 @@ button {
 }
 
 .container {
-  max-width: 1168px;
+  /* max-width: 1168px; */
+  width: 318;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .title {
@@ -220,17 +221,21 @@ button {
 
 .features {
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .feature-list {
   display: flex;
-  gap: 88px;
-  padding-left: 18px;
-  padding-right: 18px;
+  flex-wrap: wrap;
+  /* gap: 88px; */
+  gap: 20px;
+  /* padding-left: 18px;
+  padding-right: 18px; */
 }
 .feature-list-item {
-  width: calc((100% - 2 * 88px) / 3);
+  /* width: calc((100% - 2 * 88px) / 3); */
+  width: 100%;
+  padding-right: 28px;
 }
 .feture-list-title {
   font-size: 18px;
@@ -814,4 +819,26 @@ button {
   color: #ffffff;
   font-weight: 600;
   font-size: 14px;
+}
+
+/* =========MEDIA======= */
+
+@media and (min-width: 768px) {
+  .container: {
+    width: 766px;
+  }
+
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .feature-list {
+    gap: 44px 88px;
+  }
+
+  .feature-list-item {
+    width: calc((100% - 88px) / 2);
+    padding-right: 0;
+  }
 }
